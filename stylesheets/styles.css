@@ -1,0 +1,23 @@
+.container {
+    display: flex;
+    flex-direction: row;
+}
+.sidebar{
+    border: 2px solid black;
+    height: 100vh;
+    width: 200px;
+
+    background-image: url("/images/leaves.jpg");
+}
+.main-container {
+    border: 2px solid black;
+}
+.header {
+    border: 2px solid black;
+}
+.sign-up {
+    border: 2px solid black;
+}
+.footer {
+    border: 2px solid black;
+}
