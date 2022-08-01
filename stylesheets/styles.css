@@ -2,7 +2,7 @@
     font-family: myFirstFont;
     src: url("/fonts/monofonto/MONOFONT.TTF");
 }
-body {
+*, body {
     font-family: myFirstFont;
 }
 h2 {
@@ -18,8 +18,11 @@ p {
 }
 .sidebar{
     display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+    align-items: center;
     height: 100vh;
-    width: 40rem;
+    width: 80%;
     color: white;
     box-sizing: border-box;
 
@@ -28,7 +31,8 @@ p {
     background-size: 100% 100%;
 }
 .sidebar span {
-    align-self: flex-end;
+   position: absolute;
+   bottom: 0;
 }
 .main-container {
     height: 100vh;
@@ -41,6 +45,16 @@ p {
     text-align: left;
     box-sizing: border-box;
 }
+.logo {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 100%;
+    background-color: rgba(8, 8, 8, 0.5);
+    font-size: 1.8em;
+}
 .sign-up {
     border: 2px solid black;
     height: 30%;
@@ -50,4 +64,26 @@ p {
     border: 2px solid black;
     height: 35%;
     box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+.button {
+    background-color: #596D48;
+    width: 140px;
+    height: 45px;
+    font-family: sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 10px;
+    box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
+    margin-top: 10px;
+    border: none;
+    color:white;
+    cursor: pointer;
+}
+.button:hover {
+    background-color: rgb(73, 107, 48);
+}
+strong {
+    color:#596D48;
 }
