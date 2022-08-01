@@ -1,23 +1,53 @@
+@font-face {
+    font-family: myFirstFont;
+    src: url("/fonts/monofonto/MONOFONT.TTF");
+}
+body {
+    font-family: myFirstFont;
+}
+h2 {
+    padding: 20px;
+    font-size: 2rem;
+}
+p {
+    font-size: 1.5rem;
+}
 .container {
     display: flex;
     flex-direction: row;
 }
 .sidebar{
-    border: 2px solid black;
+    display: flex;
     height: 100vh;
-    width: 200px;
+    width: 40rem;
+    color: white;
+    box-sizing: border-box;
 
-    background-image: url("/images/leaves.jpg");
+    background-image: url("/images/leaves.jpg"), url("/images/odin-lined.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.sidebar span {
+    align-self: flex-end;
 }
 .main-container {
+    height: 100vh;
     border: 2px solid black;
+    box-sizing: border-box;
 }
 .header {
     border: 2px solid black;
+    height: 35%;
+    text-align: left;
+    box-sizing: border-box;
 }
 .sign-up {
     border: 2px solid black;
+    height: 30%;
+    box-sizing: border-box;
 }
 .footer {
     border: 2px solid black;
+    height: 35%;
+    box-sizing: border-box;
 }
