@@ -20,10 +20,10 @@ p {
     font-size: 1.5rem;
 }
 a {
-color: white;
+    color: white;
 }
 a:hover {
-color:#596D48;
+    color:#596D48;
 }
 .container {
     display: flex;
@@ -63,7 +63,7 @@ color:#596D48;
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 20vh;
+    height: max(21vh, 20vh);
     margin-bottom: 350px;
     width: 100%;
     background-color: rgba(8, 8, 8, 0.5);
@@ -87,16 +87,23 @@ color:#596D48;
 input {
     box-sizing: border-box;
     width: 150px;
-    height: 22px;
+    height: 30px;
     border: 1px solid #E5E7EB;
-    font-size: 16px;
-}
-input#userEmail:invalid{
-    outline: 2px solid red;
+    font-size: 15px;
+    border-radius: 4px;
+    font-family: Helvetica;
+    
 }
 input:focus {
     outline: 1px solid rgb(43, 137, 204);
     background-color: ivory;
+    box-shadow: 1px 1px 5px #adacac;
+}
+input:invalid {
+    outline: 1px solid red;
+}
+.error {
+    outline: 1px solid red;
 }
 .button {
     background-color: #596D48;
@@ -124,8 +131,28 @@ fieldset {
     border: none;
 }
 form {
-   display: flex;
-   margin: 20px;
-   flex-direction: column;
-   gap: 20px;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    gap: 40px;
+    margin: 20px;
+}
+.notify {
+    font-size: 12px;
+    color: red;
+    position:relative;
+    bottom: 20px;
+    right: 20px;
+}
+label {
+    font-size: 25px;
+}
+fieldset {
+    height: 250px;
+}
+.row {
+    display: flex;
+    gap: 10px;
+    justify-content: flex-start;
+    flex-direction: row;
 }
