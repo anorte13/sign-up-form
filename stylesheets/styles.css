@@ -2,7 +2,10 @@
     font-family: myFirstFont;
     src: url("/fonts/monofonto/MONOFONT.TTF");
 }
-*, body {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     font-family: myFirstFont;
 }
 h2 {
@@ -10,6 +13,7 @@ h2 {
     font-size: 2rem;
 }
 p {
+    padding: 20px;
     font-size: 1.5rem;
 }
 .container {
@@ -21,10 +25,9 @@ p {
     flex-direction: column;
     justify-content:space-around;
     align-items: center;
-    height: 100vh;
-    width: 80%;
+    width: 65vw;
     color: white;
-    box-sizing: border-box;
+   
 
     background-image: url("/images/leaves.jpg"), url("/images/odin-lined.png");
     background-repeat: no-repeat;
@@ -35,37 +38,46 @@ p {
    bottom: 0;
 }
 .main-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     height: 100vh;
-    border: 2px solid black;
-    box-sizing: border-box;
+    
+    
 }
 .header {
-    border: 2px solid black;
-    height: 35%;
+   
+    width: 100%;
     text-align: left;
-    box-sizing: border-box;
+    
+    word-wrap: break-word;
 }
 .logo {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     display: flex;
     align-items: center;
     justify-content: center;
-
+    height: 20vh;
+    margin-bottom: 350px;
     width: 100%;
     background-color: rgba(8, 8, 8, 0.5);
     font-size: 1.8em;
 }
 .sign-up {
-    border: 2px solid black;
+    
     height: 30%;
-    box-sizing: border-box;
 }
 .footer {
-    border: 2px solid black;
-    height: 35%;
-    box-sizing: border-box;
+    
+   
     display: flex;
     flex-direction: column;
+}
+.row {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content:flex-start;
+  flex-wrap: wrap;
 }
 .button {
     background-color: #596D48;
