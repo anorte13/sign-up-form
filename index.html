@@ -15,7 +15,8 @@
             style="height:5em;">
             <h1>ODIN</h1>
         </div>
-        <span class="foot">Photo by Halie West on Unsplash</span>
+        <span class="foot">Photo by <a href="https://unsplash.com/@haliewestphoto">
+            Halie West</a> on <a href="https://unsplash.com/">Unsplash</a></span>
     </div>
     <div class="main-container">
         <div class="header">
@@ -32,29 +33,29 @@
                     <form action="example.com/path" method="post">
                         <div class="row">
                             <label for="firstName">FIRST NAME</label>
-                            <input type="text" id="firstName" name="firstName">
+                            <input type="text" id="firstName" name="firstName" required>
     
                             <label for="lastName">LAST NAME</label>
-                            <input type="text" id="lastName" name="lastName">
+                            <input type="text" id="lastName" name="lastName" required>
                         </div>
                         <div class="row">
                             <label for="e-mail">EMAIL</label>
-                            <input type="email" id="userEmail" name="userEmail">
+                            <input type="email" id="userEmail" name="userEmail" required>
                             <label for="phone">PHONE NUMBER</label>
-                            <input type="number" id="phoneNumber" name="phoneNumber">
+                            <input type="text" id="phoneNumber" name="phoneNumber" required>
                         </div>
                         <div class="row">
                             <label for="userPassword">PASSWORD</label>
-                            <input type="password" id="userPassword" name="password">
+                            <input type="password" id="userPassword" name="password" required>
                             <label for="confirmPassword">CONFIRM PASSWORD</label>
-                            <input type="password" id="confirmPassword" name="confirmPassword">
+                            <input type="password" id="confirmPassword" name="confirmPassword" required>
                         </div>
                     </form>
                 </fieldset>
         </div>
         <div class="footer">
-            <button class="button">Create Account</button>
-            <p>Already have an account? <strong>Log in</strong></p>
+            <button  type="submit" class="button">Create Account</button>
+            <p>Already have an account? <strong><a href="">Log in</a></strong></p>
         </div>
     </div>
 </div>

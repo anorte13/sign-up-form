@@ -8,6 +8,9 @@
     box-sizing: border-box;
     font-family: myFirstFont;
 }
+h1 {
+    padding: 20px;
+}
 h2 {
     padding: 20px;
     font-size: 2rem;
@@ -15,6 +18,12 @@ h2 {
 p {
     padding: 20px;
     font-size: 1.5rem;
+}
+a {
+color: white;
+}
+a:hover {
+color:#596D48;
 }
 .container {
     display: flex;
@@ -36,20 +45,17 @@ p {
 .sidebar span {
    position: absolute;
    bottom: 0;
+   opacity: 0.6;
 }
 .main-container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     height: 100vh;
-    
-    
 }
 .header {
-   
     width: 100%;
     text-align: left;
-    
     word-wrap: break-word;
 }
 .logo {
@@ -64,31 +70,46 @@ p {
     font-size: 1.8em;
 }
 .sign-up {
-    
-    height: 30%;
+    box-shadow: 5px 6px 10px #adacac;
 }
 .footer {
-    
-   
     display: flex;
     flex-direction: column;
 }
-.row {
-  margin-bottom: 20px;
-  display: flex;
-  justify-content:flex-start;
-  flex-wrap: wrap;
+.footer a {
+    color: #596D48;
+    text-decoration: none;
+}
+.footer a:hover {
+    color:rgba(73,10,7,48);
+}
+
+input {
+    box-sizing: border-box;
+    width: 150px;
+    height: 22px;
+    border: 1px solid #E5E7EB;
+    font-size: 16px;
+}
+input#userEmail:invalid{
+    outline: 2px solid red;
+}
+input:focus {
+    outline: 1px solid rgb(43, 137, 204);
+    background-color: ivory;
 }
 .button {
     background-color: #596D48;
     width: 140px;
     height: 45px;
     font-family: sans-serif;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bold;
     border-radius: 10px;
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.1);
-    margin-top: 10px;
+    text-align: center;
+    margin-left: 20px;
+    margin-top: 20px;
     border: none;
     color:white;
     cursor: pointer;
@@ -98,4 +119,13 @@ p {
 }
 strong {
     color:#596D48;
+}
+fieldset {
+    border: none;
+}
+form {
+   display: flex;
+   margin: 20px;
+   flex-direction: column;
+   gap: 20px;
 }
